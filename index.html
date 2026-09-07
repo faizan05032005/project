@@ -3,68 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <!-- Add your CSS styles here -->
+    <title>Bright Leaf Coffee Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #ebebeb;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
             text-align: center;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #777;
         }
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
+
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hero-section:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-section h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .menu-item {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .menu-item img {
             width: 100%;
-            bottom: 0;
+            height: auto;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Home Page</h2>
-            <p>This is the home page of my website.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a team dedicated to providing high-quality services.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer various services tailored to meet your needs.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>You can reach us at info@example.com or call +1-555
+
+        .menu-item p {
+            margin-top
